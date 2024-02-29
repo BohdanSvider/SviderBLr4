@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('img/bg.png');
+    background-size: cover;
+    position: relative;
+    font-family: 'Javanese Text', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none; 
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+.navigation a {
+    color: white;
+    margin: 0 30px; 
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease; /* плавний перехід кольорів */
+}
+
+.navigation a:hover {
+    color: #D798FF; /* новий колір при наведенні */
+}
+
+.dropdown {
+    position: relative;
+    margin: 0 30px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #e1cee1;
+}
+
+.container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: floralwhite;
+    font-size: 24px;
+    line-height: 10px;
+}
+
+.highlight {
+    color: #D798FF;
+}
+
+.Title:hover {
+    font-size: 30px; 
+    color: #fffdf2; 
+}
+
+.Sign {
+    text-align: center;
+}
+
+.Sign button {
+    border: 1px solid #6D5C53;
+    padding: 10px 20px;
+    background-color: transparent;
+    cursor: pointer;
+    color: floralwhite;
+    font-family: 'Javanese Text', sans-serif;
+    font-size: 16px;
+}
+
+.Sign button:hover {
+    background-color: #D695FF;
+}
+.Title:hover {
+    font-size: 30px;
+    color: #fffcea;
+    text-shadow: rgb(255, 253, 243) 1px 0 10px;
+    transition: font-size 0.3s ease, color 0.3s ease, text-decoration 0.3s ease; /* Плавний перехід */
+}
